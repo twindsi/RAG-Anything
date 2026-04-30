@@ -22,9 +22,14 @@ VERSION_INFO = tuple(int(x) for x in __version__.split("."))
 # Minimum supported Python version for this package
 MIN_PYTHON_VERSION = (3, 8)
 
+# Minimum recommended Python version (3.10+ gives better match/case and type union syntax)
+RECOMMENDED_PYTHON_VERSION = (3, 10)
+
 __all__ = [
     "RAGAnything",
     "ModalProcessor",
     "VERSION_INFO",
+    "MIN_PYTHON_VERSION",
+    "RECOMMENDED_PYTHON_VERSION",
     "__version__",
 ]
